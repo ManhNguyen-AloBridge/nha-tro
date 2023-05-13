@@ -15,7 +15,7 @@ class IdCardFactory extends Factory
     {
         return [
             'card_number' => rand(100000000000,999999999999),
-            'url_id' => $this->faker->url(),
+            'image' => $this->faker->url(),
         ];
     }
 }

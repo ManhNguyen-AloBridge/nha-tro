@@ -6,17 +6,16 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
 
-class School extends Model
+class Contract extends Model
 {
-    use HasFactory,SoftDeletes;
+    use HasFactory, SoftDeletes;
 
-    protected $fillable =[
+    protected $fillable = [
         'id',
-        'name',
-        'short_name',
-        'address',
+        'partner_a',
+        'partner_b',
+        'image',
     ];
 
-    protected $hidden = [
-    ];
+    protected $hidden = [];
 }

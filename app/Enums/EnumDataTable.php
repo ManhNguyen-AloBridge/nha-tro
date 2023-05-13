@@ -4,7 +4,7 @@ namespace App\Enums;
 
 use App\Traits\BackedEnumTrait;
 
-enum EnumDataTable:int
+enum EnumDataTable: int
 {
     use BackedEnumTrait;
 

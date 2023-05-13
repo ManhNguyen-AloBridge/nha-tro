@@ -19,10 +19,12 @@ class DatabaseSeeder extends Seeder
                 RoomPriceSeeder::class,
                 RoomSeeder::class,
                 CostLivingSeeder::class,
-                SchoolSeeder::class,
                 VehicleSeeder::class,
-                UserSeeder::class,
                 ReceiptSeeder::class,
+                AdminSeeder::class,
+                MotelSeeder::class,
+                ContractSeeder::class,
+                UserSeeder::class,
             ]
         );
     }

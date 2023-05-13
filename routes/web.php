@@ -1,5 +1,6 @@
 <?php
 
+use App\Enums\EnumGender;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -14,6 +15,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
+    dd(EnumGender::FEMALE->value);
     return view('welcome');
 });
 

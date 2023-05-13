@@ -22,7 +22,6 @@ class User extends Authenticatable
         'id',
         'account_id',
         'room_id',
-        'school_id',
         'vehicle_id',
         'card_id',
         'name',

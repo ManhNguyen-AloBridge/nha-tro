@@ -18,7 +18,7 @@ class VehicleFactory extends Factory
             'name' => $this->faker->name(),
             'license_plate' => Str::random(6,6),
             'color' => $this->faker->randomElement(['black','red','blue']),
-            'url_image' => null
+            'image' => null
         ];
     }
 }

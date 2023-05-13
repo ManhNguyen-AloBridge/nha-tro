@@ -2,20 +2,23 @@
 
 namespace Database\Factories;
 
+use App\Enums\EnumAdminRole;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
-class SchoolFactory extends Factory
+/**
+ * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Models\Motel>
+ */
+class MotelFactory extends Factory
 {
     /**
      * Define the model's default state.
      *
-     * @return array
+     * @return array<string, mixed>
      */
-    public function definition()
+    public function definition(): array
     {
         return [
             'name' => $this->faker->name(),
-            'short_name' => $this->faker->name(),
             'address' => $this->faker->address(),
         ];
     }

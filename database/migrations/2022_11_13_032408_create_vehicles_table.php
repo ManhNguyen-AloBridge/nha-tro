@@ -18,7 +18,7 @@ class CreateVehiclesTable extends Migration
             $table->string('name');
             $table->string('license_plate')->nullable();
             $table->string('color')->nullable();
-            $table->string('url_image')->nullable();
+            $table->string('image')->nullable();
             $table->timestamps();
             $table->softDeletes();
         });

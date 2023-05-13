@@ -16,7 +16,7 @@ class CreateIdCardsTable extends Migration
         Schema::create('id_cards', function (Blueprint $table) {
             $table->id();
             $table->string('card_number');
-            $table->string('url_id')->nullable();
+            $table->string('image')->nullable();
             $table->timestamps();
             $table->softDeletes();
         });
