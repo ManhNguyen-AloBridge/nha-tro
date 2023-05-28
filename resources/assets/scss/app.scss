@@ -3,3 +3,17 @@
 // Structure
 
 @import "structure/_base";
+
+// Layout
+@import "layout/sidebar";
+
+// Admin
+@import "admin/home";
+
+.sidebar {
+    background-color: rgb(70, 70, 193);
+
+    .brand {
+        font-size: 40rem;
+    }
+}
