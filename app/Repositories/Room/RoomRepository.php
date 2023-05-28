@@ -20,7 +20,7 @@ class RoomRepository extends RepositoryAbstract implements RoomRepositoryInterfa
             ->select(DB::raw('
         rooms.id,
         rooms.number,
-        users.url_avatar,
+        users.image,
         users.name,
         room_prices.floor,
         room_prices.price

@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Admin;
 
 use App\Services\DemoService;
 use Illuminate\Http\Request;
@@ -18,7 +18,6 @@ class DemoController extends Controller
     public function store(Request $request)
     {
         $this->demoService->sendToMail($request->email);
-
     }
 
 

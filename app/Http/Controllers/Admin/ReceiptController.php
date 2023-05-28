@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Admin;
 
 use App\Services\ReceiptService;
 use Illuminate\Http\Request;
@@ -9,9 +9,7 @@ class ReceiptController extends Controller
 {
     public function __construct(
         protected ReceiptService $receiptService,
-        )
-    {
-
+    ) {
     }
 
     /**
@@ -24,7 +22,6 @@ class ReceiptController extends Controller
     {
         // $a = $this->roomService->findById($roomId);
         $a = $this->receiptService->handleCalculate($roomId);
-
     }
 
     /**

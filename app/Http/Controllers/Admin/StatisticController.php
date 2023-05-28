@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Admin;
 
 use Illuminate\Http\Request;
 use Illuminate\Http\UploadedFile;
@@ -24,5 +24,4 @@ class StatisticController extends Controller
             $data['image'] = $filename;
         }
     }
-
 }

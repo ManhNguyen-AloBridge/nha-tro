@@ -14,7 +14,8 @@ class UserService
     {
     }
 
-    public function getAll():Collection{
+    public function getAll(): Collection
+    {
         return $this->userRepository->getList();
     }
 

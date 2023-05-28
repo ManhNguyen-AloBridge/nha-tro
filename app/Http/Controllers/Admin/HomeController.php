@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Admin;
 
 use App\Services\RoomService;
 use App\Services\UserService;
@@ -11,10 +11,9 @@ class HomeController extends Controller
 {
     public function __construct(
         protected RoomService $roomService,
-        protected UserService $userService
-        )
-    {
-        // $this->roomService = $roomService;
+        // protected UserService $userService
+    ) {
+        $this->roomService = $roomService;
     }
 
     public function index(): View
@@ -22,7 +21,7 @@ class HomeController extends Controller
         $listInfoRoom = $this->roomService->getAllInfo();
 
         return view(
-            'home',
+            'admin.home',
             [
                 'listInfo' => $listInfoRoom ?? new Collection()
             ]
